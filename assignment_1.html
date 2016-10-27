@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Responsive Layout  </title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+
+}
+h3{
+  float: right;
+  border: 1px solid black;
+  padding: 5px 20px 5px 20px;
+  margin: 0px;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Monospace", Times, serif;
+}
+.container-col{
+  width: 100%;
+  height: 100%;
+  margin-right: 0px;
+  background-color: gray;
+  border: 2px solid black;
+
+}
+
+#chicken {
+ background-color: pink;
+}
+#Sushi{
+  background-color: red;
+}
+#Beef{
+    background-color: yellow;
+}
+
+
+p {  
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+  clear: both;
+  padding: 10px;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3{
+    float: left;
+    padding: 10px;
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 950px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+    padding: 10px;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+  
+}
+@media (max-width: 949px){
+  .col-sm-1, .col-sm-2, .col-sm-3 {
+    float: left;
+    padding: 10px;
+  }
+  .col-sm-1 {
+    width: 100%;
+  }
+  .col-sm-2 {
+    width: 100%;
+  }
+  .col-sm-3 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Responsive Layout assigment</h1>
+
+<div class="row">
+  <div class="col-lg-1 col-md-1 col-sm-1">
+    <div class="container-col">
+     <h3 id="chicken"> chicken</h3>
+      <p>Borders and Colors: Each section should have a background color set to some color (of your choosing). Set the background color of each section title region to some unique color (of your choosing). Make sure that the background color still allows the user to view the text in the section and section title regions. Depending on the color you choose, you may want to change the color of the text so it can be easy to read. Set a black border on both the section and section title region that is 1px thick. Warning: While not specifying borders and colors </p>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2">
+    <div class="container-col">
+      <h3 id="Beef"> Beef</h3>
+      <p>Spacing: Pay attention to the spacing shown in the mockup illustrations. Note the spacing between sections (both horizontal and vertical). Note the horizontal spacing between the edges of the section and the edges of the browser window. Also, note the spacing between the dummy text in each section and the edges of the section. </p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3">
+    <div class="container-col">
+    <h3 id="Sushi">Sushi</h3>
+      <p>Layout: In the mobile view (equal to or less than 767px), each section should take up the entire row. For a visual reference of this view, see the mobile mockup illustration below.</p>
+    </div>
+  </div>
+
+ 
+</div>
+
+</body>
+</html>
